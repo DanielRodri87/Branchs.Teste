@@ -5,13 +5,18 @@ import matplotlib.pyplot as plt
 dados = pd.read_csv('C:\\Users\\Rodrigues\\Desktop\\BRANCH-TESTE\\athlete_events.csv')
 
 masculinos = dados.loc[dados['Sex']=='M']
+femininos = dados.loc[dados['Sex']=='F']
 
-altura = masculinos['Height']
-peso = masculinos['Weight']
+alturaM = masculinos['Height']
+pesoM = masculinos['Weight']
+
+alturaF = femininos['Height']
+pesoF = femininos['Weight']
 
 plt.title('Reção Altura/Peso')
 plt.ylabel('Altura')
 plt.xlabel('Peso')
-plt.scatter(altura, peso)
+plt.scatter(alturaF, pesoF, color="pink")
+plt.scatter(alturaM, pesoM, color="blue")
 plt.savefig('grafico_linha.png', format='png')
 plt.show()
