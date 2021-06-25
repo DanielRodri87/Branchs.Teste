@@ -1,3 +1,4 @@
-nome = int(input('Digite sua idade'))
-altura = int(input('Digite sua idade'))
-print("Nome: ", nome, "altura: ", altura)
+#agora é só um comentário 
+print('hello word')
+print('2')
+
