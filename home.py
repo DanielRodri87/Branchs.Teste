@@ -2,7 +2,7 @@
 import pandas as pd   
 import matplotlib.pyplot as plt 
 
-#Arquivo com dados de atletas olímpicos usando no programa
+#Arquivo com dados de atletas olímpicos usado no programa
 dados = pd.read_csv('C:\\Users\\Rodrigues\\Desktop\\BRANCH-TESTE\\athlete_events.csv')
 
 #seleção de gênero
@@ -20,7 +20,7 @@ idadeF = femininos['Age']
 #Criação e amarzenamengo do gráfico
 plt.title('Tamanho Feminino e Masculino em relação a Idade')
 plt.ylabel('Idade')
-plt.xlabel('Tamanho')
+plt.xlabel('Tamanho em centimetros')
 plt.scatter(alturaF, idadeF, color="pink") #Mulheres simbolizadas por rosa
 plt.scatter(alturaM, idadeM, color="blue") #homens simbolizados por azul
 plt.savefig('atletas.png', format='png')
